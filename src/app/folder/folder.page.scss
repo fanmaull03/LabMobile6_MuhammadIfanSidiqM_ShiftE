@@ -1,5 +1,9 @@
-ion-menu-button {
-  color: var(--ion-color-primary);
+:root {
+  --ion-color-primary: #1f1f2e;
+  --ion-color-secondary: #1abc9c;
+  --ion-color-dark-theme: #1f1f2e;
+  --ion-color-tertiary: #8c8c8c;
+  --ion-color-custom-button: #0a9396;
 }
 
 #container {
@@ -9,11 +13,13 @@ ion-menu-button {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  color: #e0e0e0;
 }
 
 #container strong {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 28px;
+  color: var(--ion-color-secondary);
 }
 
 #container p {
@@ -24,5 +30,51 @@ ion-menu-button {
 }
 
 #container a {
+  color: var(--ion-color-secondary);
   text-decoration: none;
+}
+
+.profile-photo {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 10px auto;
+}
+
+.futuristic-card {
+  background: linear-gradient(135deg, #1f1f2e 0%, #0a9396 100%);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0px 10px 15px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.futuristic-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-subtitle,
+.card-text,
+.card-description {
+  color: #ffffff !important; /* Warna font diubah menjadi putih */
+  opacity: 1;
+}
+
+.card-title {
+  text-align: center;
+  color: var(--ion-color-secondary);
+}
+
+.message-box {
+  margin-top: 10px;
+  background: #ffffff !important; /* Ubah warna latar belakang menjadi putih */
+  color: #ffffff; /* Warna teks */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#send-button {
+  margin-top: 15px;
+  background-color: var(--ion-color-custom-button);
+  border-radius: 20px;
+  color: #fff;
 }

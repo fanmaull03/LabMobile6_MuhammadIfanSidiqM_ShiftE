@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark-theme">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -9,7 +9,7 @@
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
+    <ion-toolbar color="dark-theme">
       <ion-title size="large">{{ folder }}</ion-title>
     </ion-toolbar>
   </ion-header>
@@ -17,5 +17,48 @@
   <div id="container">
     <strong class="capitalize">{{ folder }}</strong>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+    <ion-grid>
+      <ion-row>
+        <!-- Card CV -->
+        <ion-col size="6">
+          <ion-card class="futuristic-card">
+            <ion-card-header>
+              <ion-avatar class="profile-photo">
+                <img src="assets/img/ifan.png" alt="img" />
+              </ion-avatar>
+              <ion-card-title><strong>Muhammad Ifan Sidiq Maulana</strong></ion-card-title>
+              <ion-card-subtitle class="card-subtitle">NIM: H1D022012</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content>
+              <p class="card-text"><ion-icon name="mail-outline"></ion-icon> Email: ifan&#64;gmail.com</p>
+              <p class="card-text"><ion-icon name="call-outline"></ion-icon> Phone: +62 812 3456 7890</p>
+              <p class="card-text"><ion-icon name="location-outline"></ion-icon> Location: Indonesia</p>
+
+              <ion-item class="message-box">
+                <ion-label position="stacked" color="tertiary">Kirim Pesan ke Ifan</ion-label>
+                <ion-textarea placeholder="Tulis pesan Anda di sini..."></ion-textarea>
+              </ion-item>
+              <ion-button expand="block" color="custom-button" id="send-button">
+                <ion-icon name="send-outline" slot="start"></ion-icon>Kirim
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <!-- Card Tentang Saya -->
+        <ion-col size="6">
+          <ion-card class="futuristic-card">
+            <ion-card-header>
+              <ion-card-title class="card-title"><strong>Tentang Saya</strong></ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p class="card-description">Saya Muhammad Ifan Sidiq Maulana, seorang Mahasiswa Informatika di Universitas Jenderal Soedirman Semester 5. Saat ini saya sedang belajar Pemrograman Mobile menggunakan Ionic, dengan tujuan untuk memahami pengembangan aplikasi multiplatform. Saya bersemangat mengeksplorasi teknologi terbaru dan mengembangkan keterampilan dalam membangun aplikasi yang bermanfaat.</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
